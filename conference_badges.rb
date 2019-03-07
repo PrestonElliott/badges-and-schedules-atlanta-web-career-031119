@@ -5,7 +5,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(speaker_array)
-  speaker_array.each do |name| 
+  speaker_array.map! do |name| 
     return badge_maker(name)
   end
 end
